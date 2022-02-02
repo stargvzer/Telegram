@@ -1,14 +1,10 @@
 import random
 
-token = "1894255132:AAGtDWoujDO8S2vq5K6oTylDxdXwkdaHInU"
+token = "5257043486:AAEne2vsG3AXfOJ8jyO1w9INKUb2jUQFxx4"
 
-startAnswer = "Прет, обоссал тя, чмохенсон"
-kolchok = ["Всем известно, что на колчане сидят морально разложившиеся дегенераты, "
-           "у которых нет ничего святого. Тут это стало нормой.",
-           "1чан окончательно потерял смысл своего существования."
-           "Дискач", "Я решил признаться, я очень долго скрежетал зубами "
-                     "от баттхерта по поводу девственности и того, "
-           "что жиды кругом, "
-           "поэтому стер все зубы, и теперь они у меня прочные, латунные."]
+startAnswer = 'Прколятый срущий ньюсрустер....'
 
-random_message = lambda: random.choice(kolchok)
+f = open("dict.txt","r")
+lines = f.readlines()
+
+random_message = lambda: random.choice(lines)
