@@ -16,4 +16,4 @@ def handle_text(message):
  
 
  if ('Колчок' in message):
-    bot.polling(none_stop=True, interval=10)
+    bot.polling(none_stop=True)
