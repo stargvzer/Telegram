@@ -1,6 +1,4 @@
 import random
-from telegram.ext import Updater
-
 
 token = "5257043486:AAEne2vsG3AXfOJ8jyO1w9INKUb2jUQFxx4"
 
