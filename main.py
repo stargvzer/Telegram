@@ -5,7 +5,7 @@ import kolchok
 bot = telebot.TeleBot(kolchok.token)
 
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['Колчок'])
 def handle_start(messages):
     bot.send_message(messages.chat.id, kolchok.startAnswer)
  
