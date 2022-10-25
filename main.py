@@ -16,4 +16,4 @@ def handle_text(message):
 
 
 if __name__ == '__main__':
-    bot.polling(none_stop=True, interval=60)
+    bot.polling(none_stop=True, interval=0)
