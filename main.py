@@ -15,5 +15,5 @@ def handle_text(message):
     bot.send_message(message.chat.id, kolchok.random_message())
 
 
-if __name__ == '__main__':
-    bot.polling(none_stop=True, interval=10)
+#if __name__ == '__main__':
+    #bot.polling(none_stop=True, interval=10)
