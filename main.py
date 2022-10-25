@@ -1,7 +1,5 @@
 import telebot
 import kolchok
-from telegram.ext import CommandHandler
-
 
 
 bot = telebot.TeleBot(kolchok.token)
