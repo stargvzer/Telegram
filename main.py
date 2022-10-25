@@ -4,8 +4,10 @@ import kolchok
 
 bot = telebot.TeleBot(kolchok.token)
 
-def start(update, context):
-bot.send_message(message.chat.id, kolchok.random_message())
+
+@bot.message_handler(commands=['start'])
+def handle_start(messages):
+    bot.send_message(messages.chat.id, kolchok.startAnswer)
  
 if __name__ == '__main__': 
     bot.polling()
