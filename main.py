@@ -1,20 +1,18 @@
 import telebot
 import kolchok
+from telegram.ext import CommandHandler
+
 
 
 bot = telebot.TeleBot(kolchok.token)
 
+def start(update, context):
+bot.send_message(message.chat.id, kolchok.random_message())
 
-@bot.message_handler(commands=['start'])
-def handle_start(message):
-    bot.send_message(message.chat.id, kolchok.startAnswer)
+start_handler = CommandHandler('start', start)
+dispatcher.add_handler(start_handler)
+updater.start_polling()
 
-
-@bot.message_handler(content_types=['text'])
-def handle_text(message):
-    bot.send_message(message.chat.id, kolchok.random_message())
  
-
 if __name__ == '__main__': 
     bot.polling()
-    bot.stop_polling()
