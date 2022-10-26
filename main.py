@@ -15,4 +15,4 @@ def handle_text(messages):
     bot.send_message(messages.chat.id, kolchok.random_message())
 
 
-bot.infinity_polling()
+bot.polling(none_stop=True)
