@@ -1,18 +1,18 @@
 import telebot
-import kolchok
+import kol
 
 
-bot = telebot.TeleBot(kolchok.token)
+bot = telebot.TeleBot(kol.token)
 
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
-    bot.send_message(message.chat.id, kolchok.startAnswer)
+    bot.send_message(message.chat.id, kol.startAnswer)
 
 
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
-    bot.send_message(message.chat.id, kolchok.random_message())
+    bot.send_message(message.chat.id, kol.random_message())
 
 
 if __name__ == '__main__':
